@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /area-reservada.html
+
+Sitemap: https://www.duminius.com/sitemap.xml

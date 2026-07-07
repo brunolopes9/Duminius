@@ -1,0 +1,15 @@
+VÍDEOS DE TESTEMUNHOS
+=====================
+
+Coloca aqui os 3 vídeos dos testemunhos, com estes nomes exatos:
+
+  testemunho-1.mp4   → "Inscrevi-me porque estava desempregada e para ter mais escolaridade."
+  testemunho-2.mp4   → "Inscrevi-me para aprender mais, ter o 12.º ano..."
+  testemunho-3.mp4   → "Para ter o 12.º ano, ter mais oportunidades de trabalho..."
+
+Dicas:
+- Formato .mp4 (H.264) para funcionar em todos os navegadores.
+- Se quiseres uma imagem de capa (poster), adiciona poster-1.jpg, etc.,
+  e no index.html troca poster="" por poster="assets/video/poster-1.jpg".
+- Enquanto os ficheiros não existirem, o site mostra um cartão com o
+  botão de "play" e o texto do testemunho (nada fica partido).
