@@ -22,7 +22,7 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" />
 <link rel="stylesheet" href="assets/css/styles.css" />
 <script type="application/ld+json">
 {
@@ -41,16 +41,19 @@
 <!-- ===== TOP BAR ===== -->
 <div class="topbar">
   <div class="wrap">
-    <div class="tb-left">
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.5-1.1a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"/></svg> +351 961 303 278</span>
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg> formacao@duminius.com</span>
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Seg–Sex 9h–19h · Sáb 9h–12h30</span>
-    </div>
-    <div class="tb-right">
-      <a href="sobre.html">Sobre nós</a>
-      <a href="area-reservada.html">Área Reservada</a>
-      <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+    <div class="tb-social">
+      <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
       <a href="https://www.instagram.com/duminius_com/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3 0-2.95-1.8-2.95-1.8 0-2.07 1.4-2.07 2.85V21h-4z"/></svg></a>
+    </div>
+    <form class="tb-search" action="https://www.google.com/search" method="get" target="_blank" role="search">
+      <input type="text" name="q" placeholder="Pesquisar no site…" aria-label="Pesquisar" />
+      <input type="hidden" name="as_sitesearch" value="duminius.com" />
+      <button type="submit" aria-label="Pesquisar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></button>
+    </form>
+    <div class="tb-contact">
+      <b>+351 961 303 278</b>
+      <small>Chamada para a rede móvel nacional</small>
     </div>
   </div>
 </div>
@@ -58,24 +61,31 @@
 <!-- ===== HEADER ===== -->
 <header class="site-header">
   <div class="wrap nav">
-    <a href="index.html" class="brand" aria-label="Duminius — início">duminius</a>
+    <div class="brand-group">
+      <a href="index.html" class="brand" aria-label="Duminius — início">duminius</a>
+      <span class="nav-divider"></span>
+      <img class="dgert-badge" src="assets/img/cert/dgert.png" alt="Entidade Formadora Certificada DGERT" />
+    </div>
     <nav class="nav-links" aria-label="Principal">
       <a href="index.html" class="active">Início</a>
+      <a href="sobre.html">Sobre Nós</a>
       <a href="formacao-12-ano.html">12.º Ano</a>
-      <a href="inscricoes.html">Inscrições Abertas</a>
+      <a href="inscricoes.html">Inscrições</a>
       <a href="empresas.html">Empresas</a>
       <a href="formadores.html">Formadores</a>
       <a href="blog.html">Blog</a>
+      <a href="contactos.html">Contactos</a>
     </nav>
     <div class="nav-cta">
-      <a href="contactos.html" class="btn btn-primary">Contacte-nos</a>
+      <a href="area-reservada.html" class="btn btn-outline btn-sm">Área Reservada</a>
+      <a href="#" class="btn btn-moodle btn-sm">Moodle</a>
       <button class="nav-toggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
 <div class="mobile-menu">
-  <a href="index.html">Início</a><a href="formacao-12-ano.html">12.º Ano</a><a href="inscricoes.html">Inscrições Abertas</a><a href="empresas.html">Empresas</a><a href="formadores.html">Formadores</a><a href="blog.html">Blog</a><a href="sobre.html">Sobre nós</a><a href="area-reservada.html">Área Reservada</a>
-  <a href="contactos.html" class="btn btn-primary btn-block">Contacte-nos</a>
+  <a href="index.html">Início</a><a href="sobre.html">Sobre Nós</a><a href="formacao-12-ano.html">12.º Ano</a><a href="inscricoes.html">Inscrições Abertas</a><a href="empresas.html">Empresas</a><a href="formadores.html">Formadores</a><a href="blog.html">Blog</a><a href="contactos.html">Contactos</a><a href="area-reservada.html">Área Reservada</a>
+  <a href="#" class="btn btn-moodle btn-block" style="margin-top:16px">Moodle</a>
 </div>
 
 <!-- ===== HERO ===== -->
@@ -89,11 +99,24 @@
         <a href="inscricoes.html" class="btn btn-primary btn-lg">Ver inscrições abertas</a>
         <a href="#formacoes" class="btn btn-white btn-lg">Conhecer a formação</a>
       </div>
-      <ul class="hero-trust" data-reveal data-reveal-d="3">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Certificação reconhecida oficialmente</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Sem exames nacionais</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Acompanhamento contínuo</li>
-      </ul>
+      <div class="hero-stats" data-reveal data-reveal-d="3">
+        <div class="hero-stat">
+          <div class="hs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+          <div><b>até 400€</b><span>Apoio mensal possível</span></div>
+        </div>
+        <div class="hero-stat">
+          <div class="hs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <div><b>DGERT</b><span>Entidade certificada</span></div>
+        </div>
+        <div class="hero-stat">
+          <div class="hs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div>
+          <div><b>18+</b><span>Formação para adultos</span></div>
+        </div>
+        <div class="hero-stat">
+          <div class="hs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><b>Sátão</b><span>Viseu · presencial</span></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -106,24 +129,31 @@
   </div>
 </div>
 
-<!-- ===== STATS ===== -->
-<section class="stats">
-  <div class="wrap stats-grid">
-    <div class="stat">
-      <div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
-      <div class="num">até 400€</div><div class="lbl">Apoio mensal possível</div>
-    </div>
-    <div class="stat">
-      <div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg></div>
-      <div class="num">DGERT</div><div class="lbl">Entidade certificada</div>
-    </div>
-    <div class="stat">
-      <div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div>
-      <div class="num">18+</div><div class="lbl">Formação para adultos</div>
-    </div>
-    <div class="stat">
-      <div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-      <div class="num">Sátão</div><div class="lbl">Viseu · presencial</div>
+<!-- ===== CERTIFICADOS E RECONHECIDOS POR ===== -->
+<section class="logostrip">
+  <div class="wrap">
+    <span class="lbl">Certificados e reconhecidos por</span>
+    <div class="logo-marquee">
+      <div class="track">
+        <img src="assets/img/cert/dgert.png" alt="DGERT" loading="lazy" />
+        <img src="assets/img/cert/iefp.jpg" alt="IEFP" loading="lazy" />
+        <img src="assets/img/cert/imt.jpg" alt="IMT" loading="lazy" />
+        <img src="assets/img/cert/dgeg.png" alt="DGEG" loading="lazy" />
+        <img src="assets/img/cert/act.png" alt="ACT" loading="lazy" />
+        <img src="assets/img/cert/apcer.png" alt="APCER" loading="lazy" />
+        <img src="assets/img/cert/governo.png" alt="Governo de Portugal" loading="lazy" />
+        <img src="assets/img/cert/anacom.jpg" alt="ANACOM" loading="lazy" />
+        <img src="assets/img/cert/relacre.jpg" alt="RELACRE" loading="lazy" />
+        <img src="assets/img/cert/dgert.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="assets/img/cert/iefp.jpg" alt="" aria-hidden="true" loading="lazy" />
+        <img src="assets/img/cert/imt.jpg" alt="" aria-hidden="true" loading="lazy" />
+        <img src="assets/img/cert/dgeg.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="assets/img/cert/act.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="assets/img/cert/apcer.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="assets/img/cert/governo.png" alt="" aria-hidden="true" loading="lazy" />
+        <img src="assets/img/cert/anacom.jpg" alt="" aria-hidden="true" loading="lazy" />
+        <img src="assets/img/cert/relacre.jpg" alt="" aria-hidden="true" loading="lazy" />
+      </div>
     </div>
   </div>
 </section>
@@ -188,73 +218,97 @@
 </section>
 
 <!-- ===== OFERTA FORMATIVA ===== -->
-<section class="section-pad" id="formacoes">
+<section class="section-pad" id="formacoes" data-fcarousel>
   <div class="wrap">
     <div class="sec-head-row">
       <div data-reveal>
         <h2>As nossas <span class="grad-text">formações</span></h2>
         <p>Escolhe a área certa para o teu futuro.</p>
       </div>
-      <a href="inscricoes.html" class="btn btn-outline" data-reveal data-reveal-d="1">Ver todas as formações
+      <a href="inscricoes.html" class="btn btn-outline" data-reveal data-reveal-d="1">Ver todas
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
     </div>
+    <div class="fcarousel-body">
+      <button class="fcar-arrow prev" data-fprev aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
     <div class="fcards">
-      <div class="fcard" data-reveal>
+      <div class="fcard">
         <div class="fcard-img">
           <div class="imgwrap"><img src="assets/img/cursos/electricidade.jpg" alt="Curso de Electricidade" loading="lazy" /></div>
           <span class="fcard-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span>
         </div>
         <div class="fcard-body">
+          <span class="fcard-tag">Curso Profissional</span>
           <h3>Electricidade</h3>
-          <div class="lvl">Curso Profissional<br>2 Anos · Nível 4</div>
+          <ul class="fcard-meta">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Presencial · Sátão</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 2 anos · Nível 4</li>
+          </ul>
           <a class="rl" href="inscricoes.html">Saber mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </div>
-      <div class="fcard" data-reveal data-reveal-d="1">
+      <div class="fcard">
         <div class="fcard-img">
           <div class="imgwrap"><img src="assets/img/cursos/marketing.jpg" alt="Curso de Marketing" loading="lazy" /></div>
           <span class="fcard-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 15-5v12L3 14z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg></span>
         </div>
         <div class="fcard-body">
+          <span class="fcard-tag">Curso Profissional</span>
           <h3>Marketing</h3>
-          <div class="lvl">Curso Profissional<br>2 Anos · Nível 4</div>
+          <ul class="fcard-meta">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Presencial · Sátão</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 2 anos · Nível 4</li>
+          </ul>
           <a class="rl" href="inscricoes.html">Saber mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </div>
-      <div class="fcard" data-reveal data-reveal-d="2">
+      <div class="fcard">
         <div class="fcard-img">
           <div class="imgwrap"><img src="assets/img/cursos/construcao.jpg" alt="Curso de Construção Civil" loading="lazy" /></div>
           <span class="fcard-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
         </div>
         <div class="fcard-body">
+          <span class="fcard-tag">Curso Profissional</span>
           <h3>Construção Civil</h3>
-          <div class="lvl">Curso Profissional<br>2 Anos · Nível 4</div>
+          <ul class="fcard-meta">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Presencial · Sátão</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 2 anos · Nível 4</li>
+          </ul>
           <a class="rl" href="inscricoes.html">Saber mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </div>
-      <div class="fcard" data-reveal data-reveal-d="3">
+      <div class="fcard">
         <div class="fcard-img">
           <div class="imgwrap"><img src="assets/img/cursos/restauracao.jpg" alt="Curso de Restauração" loading="lazy" /></div>
           <span class="fcard-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M15.5 8a5 5 0 1 0 0 8"/><path d="M6 11h7M6 14h6"/></svg></span>
         </div>
         <div class="fcard-body">
+          <span class="fcard-tag">Curso Profissional</span>
           <h3>Restauração</h3>
-          <div class="lvl">Curso Profissional<br>2 Anos · Nível 4</div>
+          <ul class="fcard-meta">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Presencial · Sátão</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 2 anos · Nível 4</li>
+          </ul>
           <a class="rl" href="inscricoes.html">Saber mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </div>
-      <div class="fcard" data-reveal data-reveal-d="3">
+      <div class="fcard">
         <div class="fcard-img">
           <div class="imgwrap"><img src="assets/img/cursos/informatica.jpg" alt="Curso de Informática" loading="lazy" /></div>
           <span class="fcard-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13A4 4 0 0 1 16 11"/></svg></span>
         </div>
         <div class="fcard-body">
+          <span class="fcard-tag">Curso Profissional</span>
           <h3>Informática</h3>
-          <div class="lvl">Curso Profissional<br>2 Anos · Nível 4</div>
+          <ul class="fcard-meta">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Presencial · Sátão</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 2 anos · Nível 4</li>
+          </ul>
           <a class="rl" href="inscricoes.html">Saber mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </div>
+    </div>
+      <button class="fcar-arrow next" data-fnext aria-label="Seguinte"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
     </div>
   </div>
 </section>
@@ -267,29 +321,18 @@
       <h2 data-reveal data-reveal-d="1">O que dizem os nossos formandos</h2>
       <p class="lead" data-reveal data-reveal-d="2">A melhor forma de perceber o impacto de uma formação é ouvir quem já deu o primeiro passo.</p>
     </div>
-    <div data-slider data-reveal>
-      <div class="tst-viewport">
-        <div class="tst-track">
-          <div class="tst-slide"><div class="tst-card">
-            <div class="tst-video"><video preload="none" poster="" playsinline><source src="assets/video/testemunho-1.mp4" type="video/mp4" /></video><button class="ph" aria-label="Reproduzir"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></button></div>
-            <div class="tst-body"><p class="quote">Inscrevi-me porque estava desempregada e para ter mais escolaridade.</p><div class="tst-who"><div class="av">F</div><div><b>Formanda Duminius</b><span>Conclusão do 12.º ano</span></div></div></div>
-          </div></div>
-          <div class="tst-slide"><div class="tst-card">
-            <div class="tst-video"><video preload="none" poster="" playsinline><source src="assets/video/testemunho-2.mp4" type="video/mp4" /></video><button class="ph" aria-label="Reproduzir"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></button></div>
-            <div class="tst-body"><p class="quote">Inscrevi-me para aprender mais, ter o 12.º ano e ter mais conhecimento.</p><div class="tst-who"><div class="av">F</div><div><b>Formanda Duminius</b><span>Conclusão do 12.º ano</span></div></div></div>
-          </div></div>
-          <div class="tst-slide"><div class="tst-card">
-            <div class="tst-video"><video preload="none" poster="" playsinline><source src="assets/video/testemunho-3.mp4" type="video/mp4" /></video><button class="ph" aria-label="Reproduzir"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></button></div>
-            <div class="tst-body"><p class="quote">Para ter o 12.º ano, ter mais oportunidades de trabalho e aprender mais.</p><div class="tst-who"><div class="av">F</div><div><b>Formando Duminius</b><span>Conclusão do 12.º ano</span></div></div></div>
-          </div></div>
-        </div>
+    <div class="tst-grid">
+      <div class="tst-item" data-reveal>
+        <div class="tst-video"><video preload="metadata" playsinline><source src="assets/video/testemunho-1.mp4#t=0.5" type="video/mp4" /></video><button class="ph" aria-label="Reproduzir"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></button></div>
+        <div class="tst-q"><p class="quote">Inscrevi-me porque estava desempregada e para ter mais escolaridade.</p><div class="tst-who"><div class="av">F</div><div><b>Formanda Duminius</b><span>Conclusão do 12.º ano</span></div></div></div>
       </div>
-      <div class="tst-nav">
-        <div class="tst-dots"></div>
-        <div class="tst-arrows">
-          <button data-prev aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></button>
-          <button data-next aria-label="Seguinte"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-        </div>
+      <div class="tst-item" data-reveal data-reveal-d="1">
+        <div class="tst-video"><video preload="metadata" playsinline><source src="assets/video/testemunho-2.mp4#t=0.5" type="video/mp4" /></video><button class="ph" aria-label="Reproduzir"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></button></div>
+        <div class="tst-q"><p class="quote">Inscrevi-me para aprender mais, ter o 12.º ano e ter mais conhecimento.</p><div class="tst-who"><div class="av">F</div><div><b>Formanda Duminius</b><span>Conclusão do 12.º ano</span></div></div></div>
+      </div>
+      <div class="tst-item" data-reveal data-reveal-d="2">
+        <div class="tst-video"><video preload="metadata" playsinline><source src="assets/video/testemunho-3.mp4#t=0.5" type="video/mp4" /></video><button class="ph" aria-label="Reproduzir"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></button></div>
+        <div class="tst-q"><p class="quote">Para ter o 12.º ano, ter mais oportunidades de trabalho e aprender mais.</p><div class="tst-who"><div class="av">F</div><div><b>Formando Duminius</b><span>Conclusão do 12.º ano</span></div></div></div>
       </div>
     </div>
   </div>
@@ -326,10 +369,10 @@
   <div class="wrap">
     <div class="section-head center">
       <p class="eyebrow" data-reveal>O nosso espaço</p>
-      <h2 data-reveal data-reveal-d="1">Um lugar real, no coração do Sátão</h2>
+      <h2 data-reveal data-reveal-d="1">O nosso local, no Sátão</h2>
       <p class="lead" data-reveal data-reveal-d="2">Um ambiente acolhedor e preparado para si — salas de formação, receção e um espaço pensado para aprender com conforto. Venha conhecer-nos.</p>
     </div>
-    <div class="gallery" data-reveal>
+    <div class="gallery">
       <div class="g g-main"><img src="assets/img/fachada.jpg" alt="Fachada da Duminius no Sátão, Viseu" loading="lazy" /><span class="g-cap">A nossa entrada · Sátão</span></div>
       <div class="g"><img src="assets/img/rececao.jpg" alt="Receção Duminius" loading="lazy" /></div>
       <div class="g"><img src="assets/img/sala-aula.jpg" alt="Sala de formação Duminius" loading="lazy" /></div>
@@ -338,31 +381,6 @@
     </div>
     <div style="text-align:center;margin-top:32px" data-reveal>
       <a href="contactos.html" class="btn btn-outline btn-lg">Visitar o nosso espaço</a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== CERTIFICAÇÕES ===== -->
-<section class="section-pad section-alt">
-  <div class="wrap">
-    <div class="section-head center">
-      <p class="eyebrow" data-reveal>Confiança e reconhecimento</p>
-      <h2 data-reveal data-reveal-d="1">Entidades certificadoras e homologadoras</h2>
-      <p class="lead" data-reveal data-reveal-d="2">A qualidade e a confiança são pilares do nosso trabalho, reconhecidos por entidades nacionais.</p>
-    </div>
-    <div class="certs-grid" data-reveal>
-      <div class="cell"><img src="assets/img/cert/dgert.png" alt="DGERT" loading="lazy" /></div>
-      <div class="cell"><img src="assets/img/cert/iefp.jpg" alt="IEFP" loading="lazy" /></div>
-      <div class="cell"><img src="assets/img/cert/imt.jpg" alt="IMT" loading="lazy" /></div>
-      <div class="cell"><img src="assets/img/cert/dgeg.png" alt="DGEG" loading="lazy" /></div>
-      <div class="cell"><img src="assets/img/cert/act.png" alt="ACT" loading="lazy" /></div>
-      <div class="cell"><img src="assets/img/cert/apcer.png" alt="APCER" loading="lazy" /></div>
-      <div class="cell"><img src="assets/img/cert/relacre.jpg" alt="RELACRE" loading="lazy" /></div>
-      <div class="cell"><img src="assets/img/cert/anacom.jpg" alt="ANACOM" loading="lazy" /></div>
-      <div class="cell"><img src="assets/img/cert/ewf.jpg" alt="EWF" loading="lazy" /></div>
-      <div class="cell"><img src="assets/img/cert/iiw.jpg" alt="IIW" loading="lazy" /></div>
-      <div class="cell"><img src="assets/img/cert/republica.png" alt="República Portuguesa" loading="lazy" /></div>
-      <div class="cell"><img src="assets/img/cert/governo.png" alt="Governo de Portugal" loading="lazy" /></div>
     </div>
   </div>
 </section>
@@ -376,15 +394,15 @@
     </div>
     <div class="cards c3">
       <a href="blog-12-ano-vias.html" class="post" data-reveal>
-        <div class="thumb"><span class="cat">Guia</span><img src="assets/img/sala-aula.jpg" alt="Sala de formação" loading="lazy" /></div>
+        <div class="thumb"><span class="cat">Guia</span><img src="assets/img/estudar.jpg" alt="Adulto a estudar" loading="lazy" /></div>
         <div class="pbody"><span class="pmeta">Formação · 4 min</span><h3>Equivalência ao 12.º ano: que opções existem?</h3><p>Cursos EFA, Formação Modular, RVCC e Qualifica — a via certa para si.</p><span class="rl">Ler artigo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
       </a>
       <a href="blog-fct-formacao.html" class="post" data-reveal data-reveal-d="1">
-        <div class="thumb"><span class="cat">Empresas</span><img src="assets/img/escritorio.jpg" alt="Atendimento a empresas" loading="lazy" /></div>
+        <div class="thumb"><span class="cat">Empresas</span><img src="assets/img/reuniao.jpg" alt="Reunião de empresa" loading="lazy" /></div>
         <div class="pbody"><span class="pmeta">Empresas · 5 min</span><h3>Resgatar o Fundo de Compensação para investir em formação</h3><p>Mobilize o saldo do FCT para formação certificada até 31/12/2026.</p><span class="rl">Ler artigo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
       </a>
       <a href="blog-vale-a-pena-12-ano.html" class="post" data-reveal data-reveal-d="2">
-        <div class="thumb"><span class="cat">Carreira</span><img src="assets/img/lounge.jpg" alt="Sala de espera Duminius" loading="lazy" /></div>
+        <div class="thumb"><span class="cat">Carreira</span><img src="assets/img/sucesso.jpg" alt="Adultos a celebrar" loading="lazy" /></div>
         <div class="pbody"><span class="pmeta">Carreira · 3 min</span><h3>Vale a pena tirar o 12.º ano?</h3><p>Mais empregabilidade, melhores salários e acesso ao ensino superior.</p><span class="rl">Ler artigo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
       </a>
     </div>
@@ -441,19 +459,19 @@
       <div class="foot-col"><h5>Contactos</h5>
         <ul class="foot-contact">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Rua dos Bombeiros Voluntários, n.º 6, 3560-170 Sátão</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.5-1.1a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"/></svg> +351 961 303 278</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.5-1.1a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"/></svg> <span>+351 961 303 278<br><small style="opacity:.6;font-size:.82em">Chamada para a rede móvel nacional</small></span></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg> formacao@duminius.com</li>
         </ul>
       </div>
     </div>
     <div class="foot-seals">
       <img src="assets/img/pme-lider.png" alt="PME Líder" loading="lazy" />
-      <img class="seal-livro" src="assets/img/livro-reclamacoes.png" alt="Livro de Reclamações" loading="lazy" />
+      <a href="https://www.livroreclamacoes.pt/inicio" target="_blank" rel="noopener" aria-label="Livro de Reclamações Eletrónico"><img class="seal-livro" src="assets/img/livro-reclamacoes.png" alt="Livro de Reclamações Eletrónico" loading="lazy" /></a>
       <img src="assets/img/cert/dgert.png" alt="DGERT" loading="lazy" />
     </div>
     <div class="foot-bar">
-      <p>© <span data-year>2026</span> Duminius — Formação &amp; Desenvolvimento. Todos os direitos reservados.</p>
-      <div class="links"><a href="#">Política de Privacidade</a><a href="#">Termos</a><a href="contactos.html">Contactos</a></div>
+      <p>© <span data-year>2026</span> Duminius — Formação &amp; Desenvolvimento. NIF 513 614 095.</p>
+      <div class="links"><a href="https://www.livroreclamacoes.pt/inicio" target="_blank" rel="noopener">Livro de Reclamações</a><a href="politica-privacidade.html">Privacidade</a><a href="politica-cookies.html">Cookies</a><a href="termos.html">Termos</a></div>
     </div>
   </div>
 </footer>
